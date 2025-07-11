@@ -1,0 +1,158 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  background: #1a1a2e;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+  width: 450px;
+  max-width: 95%;
+  padding: 40px 35px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+h1.title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #8c6eff;
+}
+
+/* Part label */
+.part-label {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  color: #bb86fc;
+  text-shadow: 0 0 8px #bb86fc;
+}
+
+/* Question */
+.question {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  min-height: 70px;
+  line-height: 1.4;
+  color: #d1c4e9;
+  text-shadow: 0 0 8px #a893e0;
+}
+
+/* Options */
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.option {
+  background: #3f3d56;
+  border-radius: 15px;
+  padding: 15px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(183, 179, 237, 0.3);
+}
+
+.option:hover {
+  background-color: #5e5bb7;
+  transform: scale(1.04);
+  box-shadow: 0 6px 15px rgba(138, 134, 248, 0.7);
+  color: #fff;
+}
+
+.option.selected {
+  background-color: #bb86fc;
+  color: #1a1a2e;
+  font-weight: 700;
+  box-shadow: 0 6px 18px #bb86fc;
+  transform: scale(1.08);
+}
+
+/* Buttons */
+button {
+  background: #8c6eff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(140, 110, 255, 0.7);
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #bb86fc;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #a49ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Input */
+input[type="text"] {
+  width: 80%;
+  padding: 12px 15px;
+  border-radius: 35px;
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+  color: #1a1a2e;
+  font-weight: 600;
+  box-shadow: inset 0 0 8px #8c6eff;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: inset 0 0 15px #bb86fc;
+}
+
+/* Cards */
+.card {
+  margin-bottom: 25px;
+}
+
+/* Result */
+#resultContent div {
+  margin: 12px 0;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  background: #3f3d56;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(183, 179, 237, 0.3);
+  text-align: left;
+  color: #e0d9ff;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}

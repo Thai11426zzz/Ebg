@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Skill Evaluator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- ใส่ Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Login Section -->
+    <div id="loginSection" class="card">
+      <h2 class="title">เข้าสู่ระบบ</h2>
+      <input type="text" id="usernameInput" placeholder="กรอกชื่อผู้ใช้ของคุณ" />
+      <button id="loginBtn">เริ่มทำแบบทดสอบ</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizSection" class="card hidden">
+      <h1 class="title">English Skill Evaluator</h1>
+      <div id="partLabel" class="part-label"></div>
+      <div id="questionText" class="question"></div>
+      <div id="options"></div>
+      <button id="nextBtn" class="hidden" disabled>ถัดไป</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="card hidden">
+      <h2 class="title">ผลการประเมิน</h2>
+      <div id="resultContent"></div>
+      <button id="restartBtn">ทำแบบทดสอบใหม่</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
